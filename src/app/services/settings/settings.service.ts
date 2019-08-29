@@ -16,14 +16,12 @@ ajustes: Ajustes = {
    }
 
   guardarAjustes(){
-    console.log('guardado en el localstorage')
     localStorage.setItem('ajustes', JSON.stringify(this.ajustes))
   }
 
   cargarAjustes(){
     if ( localStorage.getItem('ajustes')){
-      this.ajustes =JSON.parse(localStorage.getItem('ajustes'));
-      console.log('cargando localStorage');
+      this.ajustes =JSON.parse(localStorage.getItem('ajustes'))
       this.aplicarTema(this.ajustes.tema)
     }else{
       console.log('Usuando valores por defecto')
@@ -31,7 +29,7 @@ ajustes: Ajustes = {
   }
 aplicarTema (tema:string){
   let url = `assets/css/colors/${ tema}.css`
-  this._document.getElementById('tema').setAttribute('href', url );
+  this._document.getElementById('tema').setAttribute('href', url )
 
   this.ajustes.tema = tema;
   this.ajustes.temaUrl = url;

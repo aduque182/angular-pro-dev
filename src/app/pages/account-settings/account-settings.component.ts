@@ -1,7 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { DOCUMENT } from '@angular/platform-browser';
-import { Settings } from 'http2';
-import { SettingsService } from 'src/app/services/settings.service';
+import { SettingsService } from 'src/app/services/service.index';
 
 @Component({
   selector: 'app-account-settings',
@@ -35,7 +34,6 @@ ref.classList.remove('working');
     
     let tema = this._ajustes.ajustes.tema;
     for(let ref of selectores){
-      console.log('hola '+tema)
       if( ref.getAttribute('data-theme') == tema ){
         ref.classList.add('working');
         break;

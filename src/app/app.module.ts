@@ -8,7 +8,7 @@ import { PagesModule } from './pages/pages.module';
 import { SharedModule } from './shared/shared.module';
 
 import { FormsModule } from '@angular/forms';
-import { SettingsService } from './services/settings.service';
+import { ServiceModule } from './services/service.module';
 
 
 
@@ -26,7 +26,7 @@ import { SettingsService } from './services/settings.service';
     SharedModule,
     FormsModule
   ],
-  providers: [SettingsService],
+  providers: [ServiceModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
