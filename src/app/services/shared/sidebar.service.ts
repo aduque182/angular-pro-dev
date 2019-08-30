@@ -13,6 +13,7 @@ menu: any = [
       { titulo: 'ProgressBar', url: '/progress' },
       { titulo: 'Gráficas', url: '/graficas1' },
       { titulo: 'Promesas', url: '/promesas' },
+      { titulo: 'Account-Settings', url: '/account-settings' },
       { titulo: 'RXJS', url: '/rxjs' },
     ]
   }
